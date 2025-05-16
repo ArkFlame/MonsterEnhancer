@@ -1,0 +1,121 @@
+# MonsterEnhancer Configuration
+# Configure different equipment sets for each mob type
+
+mobs:
+  ZOMBIE:
+    # Chance to spawn an additional mob of the same type
+    companion-spawn-chance: 0.05
+    
+    equipment-sets:
+      # Level 1 - Basic gear (more common)
+      1:
+        chance: 0.50
+        name-format: "%mob% - Level %level%"
+        name-color: GREEN
+        helmet: AIR
+        chestplate: AIR
+        leggings: AIR
+        boots: LEATHER_BOOTS
+        main-hand: AIR
+        off-hand: AIR
+        drop-chance: 0.1
+      
+      # Level 2 - Slightly better gear
+      2:
+        chance: 0.35
+        name-format: "%mob% - Level %level%"
+        name-color: GREEN
+        helmet: AIR
+        chestplate: AIR
+        leggings: LEATHER_LEGGINGS
+        boots: LEATHER_BOOTS
+        main-hand: AIR
+        off-hand: AIR
+        drop-chance: 0.1
+      
+      # Level 3 - Medium gear
+      3:
+        chance: 0.25
+        name-format: "%mob% - Level %level%"
+        name-color: YELLOW
+        helmet: LEATHER_HELMET
+        chestplate: AIR
+        leggings: LEATHER_LEGGINGS
+        boots: LEATHER_BOOTS
+        main-hand: STICK
+        off-hand: AIR
+        drop-chance: 0.15
+      
+      # Level 4 - Better gear
+      4:
+        chance: 0.15
+        name-format: "%mob% - Level %level%"
+        name-color: YELLOW
+        helmet: LEATHER_HELMET
+        chestplate: LEATHER_CHESTPLATE
+        leggings: LEATHER_LEGGINGS
+        boots: LEATHER_BOOTS
+        main-hand: WOODEN_SWORD
+        off-hand: AIR
+        drop-chance: 0.15
+      
+      # Level 5 - Gold mix
+      5:
+        chance: 0.10
+        name-format: "%mob% - Level %level%"
+        name-color: GOLD
+        helmet: GOLD_HELMET
+        chestplate: LEATHER_CHESTPLATE
+        leggings: LEATHER_LEGGINGS
+        boots: GOLD_BOOTS
+        main-hand: GOLD_SWORD
+        off-hand: AIR
+        drop-chance: 0.2
+      
+      # Level 6 - Gold and chainmail mix
+      6:
+        chance: 0.07
+        name-format: "%mob% - Level %level%"
+        name-color: GOLD
+        helmet: GOLD_HELMET
+        chestplate: CHAINMAIL_CHESTPLATE
+        leggings: CHAINMAIL_LEGGINGS
+        boots: GOLD_BOOTS
+        main-hand: GOLD_SWORD
+        off-hand: AIR
+        drop-chance: 0.2
+      
+      # Level 7 - High tier (rare)
+      7:
+        chance: 0.05
+        name-format: "%mob% - Level %level%"
+        name-color: RED
+        helmet: IRON_HELMET
+        chestplate: CHAINMAIL_CHESTPLATE
+        leggings: CHAINMAIL_LEGGINGS
+        boots: IRON_BOOTS
+        main-hand: IRON_SWORD
+        off-hand: AIR
+        drop-chance: 0.25
+      
+      # Level 8 - Elite (very rare)
+      8:
+        chance: 0.02
+        name-format: "Elite %mob% - Level %level%"
+        name-color: RED
+        helmet: IRON_HELMET
+        chestplate: IRON_CHESTPLATE
+        leggings: CHAINMAIL_LEGGINGS
+        boots: IRON_BOOTS
+        main-hand: IRON_SWORD
+        off-hand: AIR
+        drop-chance: 0.3
+
+# Add more mob types following the same pattern
+# Example:
+# SKELETON:
+#   companion-spawn-chance: 0.03
+#   equipment-sets:
+#     1:
+#       chance: 0.5
+#       ...

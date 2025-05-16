@@ -1,0 +1,16 @@
+name: MonsterEnhancer
+version: "1.0"
+main: com.arkflame.monsterenhancer.MonsterEnhancer
+api-version: 1.13
+api: "1.13"
+description: Enhances monsters with custom equipment, names, and spawn behavior
+commands:
+  monsterenhancer:
+    description: Reload MonsterEnhancer configuration
+    usage: /<command> reload
+    permission: monsterenhancer.reload
+    aliases: [me]
+permissions:
+  monsterenhancer.reload:
+    description: Allows players to reload the MonsterEnhancer config
+    default: op
