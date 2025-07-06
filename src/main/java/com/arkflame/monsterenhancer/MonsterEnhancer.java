@@ -131,8 +131,7 @@ public class MonsterEnhancer extends JavaPlugin implements Listener {
     @EventHandler(ignoreCancelled = true, priority = EventPriority.HIGHEST)
     public void onCreatureSpawn(CreatureSpawnEvent event) {
         // Skip if spawn is from a spawner or plugin to prevent infinite loops
-        if (event.getSpawnReason() == CreatureSpawnEvent.SpawnReason.SPAWNER ||
-            event.getSpawnReason() == CreatureSpawnEvent.SpawnReason.CUSTOM) {
+        if (event.getSpawnReason() == CreatureSpawnEvent.SpawnReason.CUSTOM) {
             return;
         }
         
